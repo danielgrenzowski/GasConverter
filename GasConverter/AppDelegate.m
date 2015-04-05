@@ -1,18 +1,11 @@
-//
-//  AppDelegate.m
-//  GasConverter
-//
-//  Created by Danny G on 2014-08-02.
-//  Copyright (c) 2014 DGInc. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "OldCurrencyTableViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	//UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
     return YES;
 }
 							
