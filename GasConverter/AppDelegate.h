@@ -1,17 +1,7 @@
-//
-//  AppDelegate.h
-//  GasConverter
-//
-//  Created by Danny G on 2014-08-02.
-//  Copyright (c) 2014 DGInc. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property(strong, nonatomic) UIWindow *window;
-
-@property(nonatomic, retain) UINavigationController *navController;
 
 @end

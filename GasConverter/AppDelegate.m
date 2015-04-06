@@ -1,11 +1,10 @@
 #import "AppDelegate.h"
-#import "OldCurrencyTableViewController.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	//UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
     return YES;
 }
 							

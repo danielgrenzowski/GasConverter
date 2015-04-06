@@ -1,6 +1,7 @@
 #import "OldCurrencyTableViewController.h"
 #import "NetworkService.h"
 
+
 @interface OldCurrencyTableViewController ()
 
 @property NSMutableArray *currenciesArray;

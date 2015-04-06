@@ -1,8 +1,9 @@
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 
 //@protocol NetworkServiceDelegate;
-
+//@end
 
 @interface NetworkService : NSObject
 

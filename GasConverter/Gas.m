@@ -1,5 +1,4 @@
 #import "Gas.h"
-#import "YQL.h"
 
 
 @interface Gas ()

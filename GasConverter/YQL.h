@@ -1,5 +1,3 @@
-
-//
 //  YQL.h
 //  yql-ios
 //
@@ -7,7 +5,9 @@
 //  Copyright (c) 2012 Guilherme Chapiewski. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
 
 @interface YQL : NSObject
 

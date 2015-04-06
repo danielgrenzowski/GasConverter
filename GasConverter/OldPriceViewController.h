@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "Gas.h"
+
 
 @class OldPriceViewController;
 

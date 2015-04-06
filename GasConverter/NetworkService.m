@@ -1,6 +1,7 @@
 #import "NetworkService.h"
 #import "YQL.h"
 
+
 @implementation NetworkService
 
 + (NSArray *)fetchAllCurrencies {

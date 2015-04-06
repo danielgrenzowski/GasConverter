@@ -1,6 +1,7 @@
 #import "OldPriceViewController.h"
 #import "NetworkService.h"
 
+
 @interface OldPriceViewController ()
 
 @property (strong, nonatomic) UITapGestureRecognizer *tap;
@@ -10,7 +11,7 @@
 
 @implementation OldPriceViewController
 
-#pragma - Loading methods
+#pragma mark - Loading methods
 
 - (void)viewDidLoad
 {

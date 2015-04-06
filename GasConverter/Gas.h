@@ -1,4 +1,6 @@
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
 
 @interface Gas : NSObject
 
@@ -8,8 +10,6 @@
 @property (weak, nonatomic) NSString *oldCurrency;
 @property (weak, nonatomic) NSString *currency;
 
-
 + (Gas *)getInstance;
-
 
 @end
