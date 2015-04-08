@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 
 
-//@protocol NetworkServiceDelegate;
+//@protocol NetworkServiceDelegate <NSObject>;
 //@end
 
 @interface NetworkService : NSObject
@@ -11,15 +11,6 @@
 
 + (NSArray *)fetchAllCurrencies;
 
-
-//- (void)fetchAllCurrencies;
 + (CGFloat)changePriceFrom:(NSString *)theOldCurrency to:(NSString *)theNewCurrency;
 
 @end
-
-//@protocol NetworkServiceDelegate <NSObject>
-//
-//- (NSArray *)currencyListUpdated;
-//- (double)currencyMultiplierUpdated;
-//
-//@end

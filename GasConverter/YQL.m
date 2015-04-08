@@ -1,3 +1,6 @@
+#import "YQL.h"
+
+
 //  YQL.m
 //  yql-ios
 //
@@ -5,7 +8,6 @@
 //  Copyright (c) 2012 Guilherme Chapiewski. All rights reserved.
 //
 
-#import "YQL.h"
 
 #define QUERY_PREFIX @"http://query.yahooapis.com/v1/public/yql?q="
 #define QUERY_SUFFIX @"&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback="

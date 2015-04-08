@@ -1,15 +1,16 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "Gas.h"
 
 
 @class OldPriceViewController;
 
 @protocol OldPriceViewControllerDelegate <NSObject>
-- (void)oldPriceViewControllerDidSelect:(OldPriceViewController *)controller oldPrice:(CGFloat *)price;
+- (void)oldPriceViewControllerDidSelect:(OldPriceViewController *)controller oldPrice:(NSString *)price;
 @end
 
 @interface OldPriceViewController : UIViewController
+
+@property (nonatomic, weak) id <OldPriceViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) NSString *oldCurrency;
 @property (strong, nonatomic) NSString *currency;

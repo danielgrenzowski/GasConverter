@@ -29,7 +29,7 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Table view data source
+#pragma mark - TableView Data Source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -55,7 +55,7 @@
     return cell;
 }
 
-#pragma mark - Table View Actions
+#pragma mark - TableView Actions
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -63,13 +63,31 @@
     [self.delegate newCurrencyTableViewControllerDidSelect:self theNewCurrency:currency];
 }
 
+#pragma mark - Segues
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    OldPriceViewController *oldPriceViewController = (OldPriceViewController *)segue.destinationViewController;
+    oldPriceViewController.delegate = self;
+}
+
 #pragma mark - OldPriceViewControllerDelegate
 
-- (void)oldPriceViewControllerDidSelect:(OldPriceViewController *)controller oldPrice:(CGFloat *)price;
+- (void)oldPriceViewControllerDidSelect:(OldPriceViewController *)controller oldPrice:(NSString *)price;
 {
-//    Gas *gasSingleton = [Gas getInstance];
-//    gasSingleton.currency = currency;
-//    [controller performSegueWithIdentifier:@"secondSegue" sender:controller];
+    Gas *gasSingleton = [Gas getInstance];
+    gasSingleton.priceOld = (CGFloat)price.floatValue;
+
+    
+    CGFloat conversionFactor = [NetworkService changePriceFrom:gasSingleton.oldCurrency to:gasSingleton.currency];
+
+    gasSingleton.priceNew = gasSingleton.priceOld * conversionFactor;
+    
+    NSString *successMessage = [NSString stringWithFormat: @"$%.2f %@ is $%.2f %@!", gasSingleton.priceOld, gasSingleton.oldCurrency, gasSingleton.priceNew, gasSingleton.currency];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Conversion Completed!" message:successMessage delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:nil, nil];
+    [alert show];
+
     
 }
 

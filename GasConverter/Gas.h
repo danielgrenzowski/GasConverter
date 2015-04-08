@@ -10,6 +10,7 @@
 @property (weak, nonatomic) NSString *oldCurrency;
 @property (weak, nonatomic) NSString *currency;
 
+
 + (Gas *)getInstance;
 
 @end

@@ -1,5 +1,4 @@
 #import "OldCurrencyTableViewController.h"
-#import "NetworkService.h"
 
 
 @interface OldCurrencyTableViewController ()
@@ -11,7 +10,7 @@
 
 @implementation OldCurrencyTableViewController
 
-#pragma - Loading methods
+#pragma mark - Loading Methods
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,7 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - TableView Data Source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -86,6 +85,7 @@
 {
     Gas *gasSingleton = [Gas getInstance];
     gasSingleton.currency = currency;
+    
     [controller performSegueWithIdentifier:@"secondSegue" sender:controller];
     
 }

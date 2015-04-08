@@ -26,6 +26,7 @@
 		3C6758C7198D8E1A008E4723 /* GasConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6758C6198D8E1A008E4723 /* GasConverterTests.m */; };
 		3C7AC1DF19AA80AD00301B6D /* OldPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AC1DE19AA80AD00301B6D /* OldPriceViewController.m */; };
 		3CD2D8A21ACF54F2006AB6D8 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2D8A11ACF54F2006AB6D8 /* YQL.m */; };
+		3CF453B71AD3652100CEFF95 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3CF453B61AD3652100CEFF95 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		3C7AC1DE19AA80AD00301B6D /* OldPriceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldPriceViewController.m; sourceTree = "<group>"; };
 		3CD2D8A01ACF54F2006AB6D8 /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQL.h; sourceTree = "<group>"; };
 		3CD2D8A11ACF54F2006AB6D8 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQL.m; sourceTree = "<group>"; };
+		3CF453B61AD3652100CEFF95 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		3C67588F198D8E1A008E4723 = {
 			isa = PBXGroup;
 			children = (
+				3CF453B61AD3652100CEFF95 /* README.md */,
 				3C6758A1198D8E1A008E4723 /* GasConverter */,
 				3C6758C0198D8E1A008E4723 /* GasConverterTests */,
 				3C67589A198D8E1A008E4723 /* Frameworks */,
@@ -304,6 +307,7 @@
 				3C7AC1DF19AA80AD00301B6D /* OldPriceViewController.m in Sources */,
 				3C64E11719AA74340054D09C /* OldCurrencyTableViewController.m in Sources */,
 				3C17B1AF19999C96006AB543 /* NetworkService.m in Sources */,
+				3CF453B71AD3652100CEFF95 /* README.md in Sources */,
 				3C64E11B19AA7C5C0054D09C /* NewCurrencyTableViewController.m in Sources */,
 				3C4D3966198EF2DD000358A0 /* Gas.m in Sources */,
 			);

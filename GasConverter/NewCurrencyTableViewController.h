@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "OldPriceViewController.h"
+#import "NetworkService.h"
+#import "Gas.h"
 
 
 @class NewCurrencyTableViewController;
